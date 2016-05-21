@@ -8,42 +8,42 @@ Unified Authorization Method
 
 1. Account
 ====
-(1)`/api/user/account/register`
+(1)`api/user/account/register`
 
    + method: POST
    + body: {"mail":" ", "name":" ", "phone:" ", password:" "}
 
-(2)`/api/user/account/login` 
+(2)`api/user/account/login` 
 
    + method: POST
    + body: {"mail/name/phone":" ", password:" "}
 
 2.  Friends
 ====
-(1) `/api/user/friend/request`
+(1) `api/user/friend/request`
 
    + description: send a friend request
    + method: POST
    + body: {"friendId": " "}
 
-(2) `/api/user/friend/request`
+(2) `api/user/friend/request`
 
    + description: agree a friend request
    + method: PUT
    + body: {"friendId": " "}
 
 
-(3) `/api/user/friend/request`
+(3) `api/user/friend/request`
 
    + description: get the list of the friend request
    + method: GET
  
-(4) `/api/user/friend/list`
+(4) `api/user/friend/list`
 
    + description: get the friend list
    + method: GET
 
-(5) `/api/user/friend/delete`
+(5) `api/user/friend/delete`
 
    + description: delete a friend
    + method: DELETE
@@ -52,4 +52,4 @@ Unified Authorization Method
    
 3. Sheet
 ====
- (1) `/api/sheet/`
+ (1) `api/sheet/`

@@ -52,4 +52,8 @@ Unified Authorization Method
    
 3. Sheet
 ====
- (1) `api/sheet/`
+ (1) `api/music/sheet/create`
+   + description: creare a sheet
+   + method: POST
+   + body:  {name: " ", privilege: " "}
+   + privilege has 3 types: public, private and friend

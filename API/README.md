@@ -55,5 +55,28 @@ Unified Authorization Method
  (1) `api/music/sheet/create`
    + description: creare a sheet
    + method: POST
-   + body:  {name: " ", privilege: " "}
+   + body:  {"name": " ", "privilege": " "}
    + privilege has 3 types: public, private and friend
+   
+ (2) `api/music/sheet/delete`
+   + description: delete a sheet and delete all the audios belong to the sheet
+   + method: DEL
+   + body:  {"name": " "}
+   
+ (3) `api/music/sheet/update`
+   + description: update the sheet name
+   + method: PUT
+   + body:  {"name": " "(must), "updateName":" ","privilege":" "}
+
+ (4) `api/music/sheet/list`
+   + description: get self sheets or get other's public or friend sheets
+   + method: GET
+
+4. Audio
+====
+ (1) `api/music/audio/add`
+   + description: add a audio to a sheet
+   + method: POST
+   + body:  {name: " ", audioUrl: " "(unique), imageUrl:" "(can be null), sheetId: int, artistId: int(need to modify)}
+   + property "duration" still has some problem
+   

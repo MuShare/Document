@@ -71,12 +71,40 @@ Unified Authorization Method
 (4) `api/music/sheet/list`
    + description: get self sheets or get other's public or friend sheets
    + method: GET
+   + url + ?ToID=?
+
+(5) `api/music/sheet/subscribe`
 
 4. Audio
 ====
 (1) `api/music/audio/add`
-   + description: add a audio to a sheet
+   + description: add an audio to a sheet
    + method: POST
-   + body:  {name: " ", audioUrl: " "(unique), imageUrl:" "(can be null), sheetId: int, artistId: int(need to modify)}
+   + body:  {"name": " ", "audioUrl": " "(unique), "imageUrl":" "(can be null), "sheetId": int, "artistId": int(need to modify)}
    + property "duration" still has some problem
+
+(2) `api/music/audio/delete`
+   + description: delete an audio
+   + method: DEL
+   + body:  {"audioUrl": " "(unique)}
+   
+(3) `api/music/audio/update`
+   + description: update an audio info.
+   + method: PUT
+   + body:  {"name": " ", "audioUrl": " "(unique), "imageUrl":" "(can be null), "sheetId": int, "artistId": int(need to modify)}
+
+(4) `api/music/audio/list`
+   + description: get the audios of from a sheet
+   + method: GET
+   + url + ?SheetID=?
+
+(5) `api/music/migration/update`
+   + description: change the sheet id from a list of audioId.
+   + method: PUT
+   + body:  {"idList":[](int), "toSheetID":(int)}
+
+
+
+
+
    

@@ -58,7 +58,7 @@ Unified Authorization Method
 
 3. Search
 ====
-(1) /api/user/search/stranger
+(1) `api/user/search/stranger`
 
    + decription: search a user
    + method: GET

@@ -11,12 +11,18 @@ Unified Authorization Method
 (1)`api/user/account/register`
 
    + method: POST
-   + body: {"mail":" ", "name":" ", "phone:" ", password:" "}
+   + body: {"mail":" ", "name":" ", password:" "}
 
 (2)`api/user/account/login` 
 
    + method: POST
-   + body: {"mail/name/phone":" ", password:" "}
+   + body: {"mail/name":" ", password:" "}
+
+(3)`api/user/account/logout`
+
+   + method: POST
+   + body: null
+   + response: always response with ok (200) 
 
 2.  Friends
 ====
